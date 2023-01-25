@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-base: #111013;
+  --color-primary: #fff;
+  --color-primary-trans: rgba(255, 255, 255, 0.61);
+  --color-secondary: rgba(255, 255, 255, 0.53);
+  --color-cta: rgb(20, 211, 48);
+  --color-cta-trans: rgba(20, 211, 48, 0.66);
+}
+
+::selection {
+  color: var(--color-base);
+  background: var(--color-cta);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+  background: var(--color-base);
+  color: var(--color-primary);
+  transition: all 400ms ease;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.container img {
+  size: 0.5rem;
+}
+
+.container {
+  order: 1;
+  /*position: absolute;*/
+  /*top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);*/
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  height: 100%;
+}
+
+a {
+  padding: 0.5rem;
+}
+
+a:link {
+  color: var(--color-primary);
+}
+
+/* visited link */
+a:visited {
+  color: var(--color-primary-trans);
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--color-cta-trans);
+}
+
+/* selected link */
+a:active {
+  color: var(--color-cta);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  transition: all 400ms ease;
+}
+
+p,
+small {
+  transition: all 400ms ease;
+  color: var(--color-secondary);
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  white-space: nowrap;
+  transition: all 400ms ease;
+  color: var(--color-cta);
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  color: var(--color-primary);
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+#terminal {
+  order: 2;
+  background-color: var(--color-base);
+  color: var(--color-primary);
+  font-family: monospace;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  width: 100%;
+  text-align: left;
+}
+#terminal-output {
+  white-space: pre; /* preserves whitespace */
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+#input {
+  background-color: var(--color-base);
+  color: var(--color-primary);
+  width: 70%;
+}
+#user {
+  color: var(--color-cta);
+  font-weight: bold;
+}
+.command-output {
+  color: var(--color-cta);
+}
+.banner {
+  color: white;
+}
+.banner-art {
+  line-height: 13px;
+  color: white;
+}
