@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   var output = document.getElementById("output");
   output.innerHTML +=
-    "Welcome to my interactive web terminal.<br>For a list of available commands, type 'help'.";
+    "Welcome to my interactive web terminal.<br>For a list of available commands, type 'help'.<br>";
   // Define an object to hold the available commands
   var commands = {
     whois: function () {
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
         output.innerHTML = "";
       } else {
         output.innerHTML +=
-          "<br><span id='user'>visitor@formalsnake.dev:~$ " + input + "</span>";
+          "<span id='user'>visitor@formalsnake.dev:~$ " + input + "</span>";
         output.innerHTML +=
           "<p class='command-output'>" + commands[input]() + "</p>";
       }
