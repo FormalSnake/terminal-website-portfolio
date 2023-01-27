@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Define an object to hold the available commands
   var commands = {
     whois: function () {
-      return "<br><p class='banner'>Hi 👋, I am FormalSnake 🐍!<br>I am a software and game developer, and I make some interesting projects, like this one!<br>I also make YouTube videos about Game development 🎮!</p>";
+      return "<p class='banner'>Hi 👋, I am FormalSnake 🐍!<br>I am a software and game developer, and I make some interesting projects, like this one!<br>I also make YouTube videos about Game development 🎮!</p>";
     },
     whoami: function () {
-      return "<br><p class='banner'>The paradox of “Who am I?” is: we never know, but, we constantly find out.</p>";
+      return "<p class='banner'>The paradox of “Who am I?” is: we never know, but, we constantly find out.</p>";
     },
     video: function () {
       return "<p class='banner'>Opening YouTube...</p>";
@@ -42,6 +42,14 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     banner: function () {
       return "<p class='banner'>Welcome to my interactive web terminal.<br>For a list of available commands, type 'help'.</p>";
+    },
+    formalfetch: function () {
+      var os = window.navigator.platform; // You can use the window.navigator.platform to get the os
+      var browser = window.navigator.userAgent; // You can use the window.navigator.userAgent to get the browser
+      return "OS: " + os + "<br>" + "Browser: " + browser;
+    },
+    ls: function () {
+      return "'homework'/   hal9000.sh";
     },
   };
   var commandHistory = [];
