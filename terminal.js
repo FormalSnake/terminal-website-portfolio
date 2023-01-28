@@ -73,6 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     } else {
       output.innerHTML +=
+        "<span id='user'>visitor@formalsnake.dev:~$ " + input + "</span>";
+      output.innerHTML +=
         "<p>Command not found. For a list of commands, type 'help'.</p>";
     }
 
