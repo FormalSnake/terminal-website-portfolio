@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
       return "<p class='banner'>Opening YouTube...</p>";
     },
     social: function () {
-      return "<br><p class='banner'><a href='https://discord.gg/JAPhfQgu9J' target='_blank' aria-label='Discord'><i class='uil uil-discord'></i></a><br><a href='https://twitter.com/formalsnake' target=''_blank' aria-label='Twitter'><i class='uil uil-twitter'></i></a><br><a href='https://github.com/FormalSnake' target='_blank' aria-label='Github'><i class='uil uil-github'></i></a></p>";
+      return "<p class='banner'><a href='https://discord.gg/JAPhfQgu9J' target='_blank' aria-label='Discord'><i class='uil uil-discord'></i></a><br><a href='https://twitter.com/formalsnake' target=''_blank' aria-label='Twitter'><i class='uil uil-twitter'></i></a><br><a href='https://github.com/FormalSnake' target='_blank' aria-label='Github'><i class='uil uil-github'></i></a></p>";
     },
     projects: function () {
-      return "<br><p class='banner'>I am working on... <br> 🧟 A game called Zombie Siege, <br> 💬 A dialog system for Unity.</p>";
+      return "<p class='banner'>I am working on... <br> 🧟 A game called Zombie Siege, <br> 💬 A dialog system for Unity.</p>";
     },
     history: function () {
       return commandHistory.join("<br>");
