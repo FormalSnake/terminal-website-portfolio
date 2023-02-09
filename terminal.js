@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Clear the input field
     document.getElementById("input").value = "";
+    window.scrollTo(0, document.body.scrollHeight);
   }
   document.getElementById("input").onkeydown = function (e) {
     if (e.key === "Enter") executeCommand();
